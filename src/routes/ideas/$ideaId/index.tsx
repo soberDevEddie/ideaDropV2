@@ -1,15 +1,13 @@
 import { createFileRoute, Link } from '@tanstack/react-router';
 import { queryOptions, useSuspenseQuery } from '@tanstack/react-query';
+
 import type { Idea } from '@/types';
+import api from '@/lib/axios';
 
 const fetchIdea = async (ideaId: string): Promise<Idea> => {
-  const res = await fetch(`/api/ideas/${ideaId}`);
+  const res = await api.get(`/ideas/${ideaId}`);
 
-  if (!res.ok) {
-    throw new Response('Idea not found', { status: 404 });
-  }
-
-  return res.json();
+  return res.data;
 };
 
 const ideaQueryOptions = (ideaId: string) =>
@@ -35,7 +33,7 @@ function IdeaDetailsPage() {
         ← Back to Ideas
       </Link>
       <h2 className='text-2xl font-bold'>{idea.title}</h2>
-      <p className="mt-2">{idea.description}</p>
+      <p className='mt-2'>{idea.description}</p>
     </div>
   );
 }
