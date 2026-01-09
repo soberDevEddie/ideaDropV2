@@ -13,12 +13,12 @@ const fetchIdea = async (ideaId: string) => {
 export const Route = createFileRoute('/ideas/$ideaId/')({
   component: IdeaDetailsPage,
   loader: async ({ params }) => {
-    fetchIdea(params.ideaId);
+    return fetchIdea(params.ideaId);
   },
 });
 
 function IdeaDetailsPage() {
   const idea = Route.useLoaderData();
 
-  return <div>{ideaId}!</div>;
+  return <div>{idea.title}!</div>;
 }
