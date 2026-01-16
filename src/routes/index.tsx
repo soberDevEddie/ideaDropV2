@@ -21,7 +21,8 @@ function HomePage() {
   const { data: ideas } = useSuspenseQuery(ideasQueryOptions());
   // console.log(ideas);
 
-  const latestIdeas = ideas.slice(0, 3);
+  // const latestIdeas = ideas.slice(0, 3);
+  const latestIdeas = [...ideas].sort(())
 
   return (
     <div className='flex flex-col md:flex-row items-start justify-between gap-10 p-6 text-blue-600'>
