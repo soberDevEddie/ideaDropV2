@@ -49,6 +49,13 @@ function IdeaDetailsPage() {
       </Link>
       <h2 className='text-2xl font-bold'>{idea.title}</h2>
       <p className='mt-2'>{idea.description}</p>
+      
+    {/* Edit Button */}
+    <Link to=' '>
+    Edit
+    </Link>
+
+      {/* Delete Button */}
       <button
         onClick={handleDelete}
         disabled={isPending}
