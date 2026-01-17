@@ -73,16 +73,18 @@
       "createdAt": "2025-04-24T13:10:00.000Z"
     },
     {
-      "id": "75bb",
-      "title": "Eddie's Idea",
-      "summary": "lorem",
-      "description": "loremipsum...",
+      "id": "b884",
+      "title": "Eddie's Test Idea",
+      "summary": "lorem ipsum",
+      "description": "Enim quis laborum labore culpa aliqua est.",
       "tags": [
-        "webdev",
-        "programming"
+        "web dev",
+        "web",
+        "programming",
+        "react"
       ],
-      "createdAt": "2026-01-16T20:43:35.943Z",
-      "updatedAt": "2026-01-16T20:43:35.943Z"
+      "createdAt": "2026-01-17T17:11:29.344Z",
+      "updatedAt": "2026-01-17T17:11:29.344Z"
     }
   ]
 }

@@ -39,11 +39,11 @@ function NewIdeaPage() {
         tags: tags
           .split(',')
           .map((tag) => tag.trim())
-          .filter((tag) => tag.length > 0),
+          .filter((tag) => tag !== ''),
       });
     } catch (error) {
       console.error('Error creating idea:', error);
-      alert('Something went wrong...😔');
+      alert('Something went wrong...');
     }
   };
 
@@ -121,7 +121,6 @@ function NewIdeaPage() {
 
         <div className='mt-5'>
           <button
-            disabled={isPending}
             type='submit'
             disabled={isPending}
             className='block w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 rounded-md transition disabled:opacity-50 disabled:cursor-not-allowed'
