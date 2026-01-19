@@ -73,9 +73,8 @@
       "createdAt": "2025-04-24T13:10:00.000Z"
     },
     {
-      "id": "b884",
-      "title": "Eddie's Test Idea",
-      "summary": "lorem ipsum",
+      "title": "Updated - Eddie's Test Idea",
+      "summary": "Enim quis laborum labore culpa aliqua est.",
       "description": "Enim quis laborum labore culpa aliqua est.",
       "tags": [
         "web dev",
@@ -83,8 +82,7 @@
         "programming",
         "react"
       ],
-      "createdAt": "2026-01-17T17:11:29.344Z",
-      "updatedAt": "2026-01-17T17:11:29.344Z"
+      "id": "b884"
     }
   ]
 }
