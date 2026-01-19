@@ -51,7 +51,7 @@ function IdeaDetailsPage() {
       <p className='mt-2'>{idea.description}</p>
       
     {/* Edit Button */}
-    <Link to=' '>
+    <Link params={{ideaId}} to='/ideas/$ideaId/edit' className='text-sm bg-yellow-600 text-white mt-4 mr-2 px-4 py-2 rounded transition hover:bg-yellow-700 disabled:opacity-50'>
     Edit
     </Link>
 
